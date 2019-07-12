@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t saravp123/docker-react -f Docerfile.dev .
+  - docker build -t saravp123/docker-react -f Dockerfile.dev .
 
 script:
   - docker run saravp123/docker-react npm run test -- --coverage
